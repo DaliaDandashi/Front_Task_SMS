@@ -1,0 +1,691 @@
+*:focus {
+  outline: none;
+}
+
+.table-wrapper {
+  width: 90%;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+@media screen and (max-width: 760px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .table-wrapper {
+    width: 600px
+  }
+  .table-title .add-new {
+    right: 10px;
+    padding: 5px 9px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .table-title .add-new::after {
+    content: "Add New";
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .table-title .add-new {
+    padding: 10px 15px;
+    right: 20px;
+  }
+}
+
+.table-title {
+  padding-bottom: 10px;
+  margin: 0 0 10px;
+}
+
+.table-title h2 {
+  margin: 6px 0 0;
+  font-size: 22px;
+}
+
+.add-new:focus {
+  outline: none;
+}
+
+.table-title .add-new:hover {
+  background-color: rgb(15, 159, 255);
+}
+
+.table-title .add-new {
+  position: absolute;
+  background-color: rgb(71, 181, 255);
+  top: 64px;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filterClass {
+  background-color: rgb(71, 181, 255);
+  color: white;
+  padding: 3px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filterClass:hover {
+  background-color: rgb(15, 159, 255);
+}
+
+.listadmintitle {
+  text-align: center;
+}
+
+.editAdmin {
+  color: rgb(71, 181, 255);
+}
+
+.editAdmin:hover {
+  color: rgb(15, 159, 255);
+}
+
+.deleteAdmin {
+  color: rgb(255, 0, 0);
+}
+
+.deleteAdmin:hover {
+  color: rgb(158, 0, 0);
+}
+
+table.table {
+  table-layout: fixed;
+}
+
+table.table tr th, table.table tr td {
+  border-color: #e9e9e9;
+}
+
+table.table th i {
+  font-size: 13px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+table.table th:last-child {
+  width: 100px;
+}
+
+table.table td a {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  min-width: 24px;
+}
+
+table.table td i {
+  font-size: 24px;
+}
+
+table.table td a.add i {
+  font-size: 24px;
+  margin-right: -1px;
+  position: relative;
+  top: 3px;
+}
+
+table.table .form-control {
+  height: 32px;
+  line-height: 32px;
+  box-shadow: none;
+  border-radius: 2px;
+}
+
+table.table td .add {
+  display: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+.textaddadmin {
+  background-color: white;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.divaddadmin label {
+  color: black;
+}
+
+.canceladdadmin {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.canceladdadmin:hover {
+  background-color: rgb(158, 0, 0);
+}
+
+.submitaddadmin {
+  background-color: rgb(71, 181, 255);
+  color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.submitaddadmin:hover {
+  background-color: rgb(15, 159, 255);
+}
+
+.divaddadmin {
+  margin: 20px 15% 20px 15%;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.buttonsadmin {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  .divaddadmin {
+    margin: 10px 1% 10px 1%;
+  }
+}
+
+.divDelete {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 180px;
+  background-image: linear-gradient(#6D6F73, #47484b);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.deleteSpan1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.deleteSpan2 {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.deleteDivButtons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.table-wrapper222 .table222 {
+  color: black;
+  font-size: 18px;
+  border: none;
+  margin-right: auto;
+  margin-left: auto;
+  border-collapse: separate;
+  border-spacing: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .table-wrapper222 .table222 td {
+    padding: 5px 15px 5px 15px;
+    margin: 5px 10px 5px 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .table-wrapper222 .table222 {
+    position: absolute;
+    left: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .table-wrapper222 .table222 td {
+    padding: 10px 25px 10px 25px;
+    margin: 10px 20px 10px 20px;
+  }
+}
+
+@media screen and (min-width: 510px) {
+  .bi-plus-square-dotted::after {
+    content: "Create";
+    font-style: normal;
+  }
+  .bi-list-stars::after {
+    content: "List";
+    font-style: normal;
+  }
+}
+
+.table-wrapper222 .table222 td {
+  border-radius: 5px;
+  text-align: left;
+  background-color: white;
+}
+
+.table-wrapper222 .table222 tr td .bi-plus-square-dotted, .table-wrapper222 .table222 tr td .bi-list-stars, .table-wrapper222 .table222 tr td .spancreate, .table-wrapper222 .table222 tr td .spanlist {
+  color: white
+}
+
+.table222 tr .tdcreate {
+  background-color: rgb(71, 181, 255);
+}
+
+.table222 tr .tdcreate:hover {
+  background-color: rgb(15, 159, 255);
+}
+
+.table222 tr .tdlist {
+  background-color: rgb(0, 107, 179);
+}
+
+.table222 tr .tdlist:hover {
+  background-color: rgb(0, 81, 134);
+}
+
+.table222 .tdtitle {
+  font-weight: bold;
+}
+
+.searchspan {
+  padding: 3px 8px 5px 8px;
+  background: rgb(71, 181, 255);
+  color: white;
+  border-left: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.searchspan:hover {
+  background: rgb(15, 159, 255);
+}
+
+.inputSearchSpan {
+  padding: 5px 8px;
+  border: none;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  font-size: 14px;
+}
+
+.divFilterS {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  background-image: linear-gradient(#6D6F73, #47484b);
+  padding: 20px 5px 15px 5px;
+  border-radius: 5px;
+}
+
+.divrowselect {
+  width: 230px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+  .divFilterS {
+    flex-flow: column;
+    align-items: center;
+  }
+  .divrowselect {
+    margin-top: 10px;
+  }
+  .inputSearchSpan {
+    padding: 4px 8px;
+    width: 200px;
+  }
+}
+
+.classFlexRadio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+  margin-top: 5px;
+}
+
+.malefemalename {
+  color: white;
+  font-size: 15px;
+}
+
+.mini-filter {
+  text-align: left;
+}
+
+input[type='radio'] {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border-radius: 100px;
+  background-color: white;
+  transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: -1px;
+  border-radius: 100px;
+  background: rgb(71, 181, 255);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+  cursor: pointer;
+}
+
+.tableCenterForm {
+  width: 80%;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+#file-input {
+  display: none;
+}
+
+.file-field {
+  position: absolute;
+  left: 10%;
+}
+
+.specpic {
+  border: 1px solid gray;
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  .specpic {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .file-field {
+    position: initial;
+  }
+  .specpic {
+    width: 120px;
+    height: 120px;
+  }
+  .tableCenterForm {
+    width: 100%;
+  }
+  .textaddadmin {
+    padding: 5px 3px;
+  }
+  .topright, .topright2 {
+    position: absolute;
+    top: 110px;
+    right: 50px;
+    padding: 5px 1px;
+  }
+  .topright2 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .topright, .topright2 {
+    position: absolute;
+    top: 330px;
+    left: 10%;
+    padding: 10px 5px;
+    width: 15%;
+  }
+  .topright2 {
+    margin-top: 70px;
+  }
+}
+
+.flexRowStu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: space-around;
+}
+
+.widthheightimg {
+  height: 100px;
+  width: 155px;
+}
+
+.add-new-attendance, .old-list-attendance {
+  background-color: rgb(71, 181, 255);
+  color: white;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 15px 0px;
+  font-size: large;
+}
+
+.flexflowdiv {
+  margin-top: 10%;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.add-new-attendance:hover, .old-list-attendance:hover {
+  background-color: rgb(15, 159, 255);
+}
+
+.tableatten th {
+  width: 20%;
+}
+
+.dateSearch {
+  width: 230px;
+  border: none;
+  padding: 3px 0px 3px 10px;
+  border-radius: 4px;
+  color: #6D6F73;
+}
+
+@media screen and (max-width: 900px) {
+  .dateSearch {
+    margin-top: 10px;
+  }
+  .inputSearchSpan {
+    padding: 1px 0px 2.5px 0px;
+  }
+  .flexflowdiv {
+    width: 200px;
+  }
+}
+
+.inputSearchSpan {
+  padding-left: 5px;
+}
+
+.centerHead {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchAttend {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.helloclass {
+  display: flex;
+  flex-flow: row;
+}
+
+.helloclass .filterClass {
+  margin-left: 10px;
+}
+
+.table-wrapper333 td {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+@media screen and (max-width: 900px) {
+  .RowFlex {
+    flex-flow: column;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .RowFlex {
+    flex-flow: row;
+  }
+}
+
+.RowFlex {
+  display: flex;
+}
+
+.card {
+  border-radius: 0;
+  border: none
+}
+
+.card1 {
+  width: 50%;
+  padding: 40px 30px 10px 30px
+}
+
+.card2 {
+  width: 50%;
+  background-image: linear-gradient(to right, rgb(71, 181, 255), rgb(15, 159, 255))
+}
+
+.heading {
+  margin-bottom: 60px !important
+}
+
+::placeholder {
+  color: #000 !important;
+  opacity: 1
+}
+
+:-ms-input-placeholder {
+  color: #000 !important
+}
+
+::-ms-input-placeholder {
+  color: #000 !important
+}
+
+.form-control-label {
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+.msg-info {
+  padding-left: 15px;
+  margin-bottom: 30px
+}
+
+.btn-color {
+  border-radius: 50px;
+  color: #fff;
+  background-image: linear-gradient(to right, rgb(71, 181, 255), rgb(15, 159, 255));
+  padding: 15px;
+  cursor: pointer;
+  border: none !important;
+  margin-top: 40px
+}
+
+.btn-color:hover {
+  color: #fff;
+  background-image: linear-gradient(to right, #6D6F73, #47484b)
+}
+
+.btn-white:hover {
+  color: #fff;
+  background-image: linear-gradient(to right, #6D6F73, #47484b)
+}
+
+.bottom {
+  width: 100%;
+  margin-top: 50px !important
+}
+
+.sm-text {
+  font-size: 15px
+}
+
+@media screen and (max-width: 992px) {
+  .card1 {
+    width: 100%;
+    padding: 40px 30px 10px 30px
+  }
+  .card2 {
+    width: 100%
+  }
+  .right {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px !important
+  }
+  .card2 {
+    padding: 50px
+  }
+  .right {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important
+  }
+}
+
+.tableDataView td {
+  width: 10%;
+  border: 1px solid gray;
+}
+
+.tableDataView {
+  margin: 20px auto 20px auto;
+}
