@@ -13,6 +13,7 @@ const LinkPage = () => {
             <Link to="/">Home</Link>
             <Link to="/student">Students Page</Link>
             <Link to="/admin">Admin Page</Link>
+            <Link to="/homework">Homework Page</Link>
         </section>
     )
 }

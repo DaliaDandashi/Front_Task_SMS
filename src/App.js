@@ -2,8 +2,7 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Home from './components/Home';
 import Layout from './components/Layout';
-import Editor from './components/Student';
-import Admin from './components/Admin';
+
 import Missing from './components/Missing';
 import Unauthorized from './components/Unauthorized';
 import Lounge from './components/Lounge';
@@ -11,10 +10,18 @@ import LinkPage from './components/LinkPage';
 import RequireAuth from './components/RequireAuth';
 import { Routes, Route } from 'react-router-dom';
 
+// pages
+import Student from './pages/Home/Admin_Panel/Manage_Student/List_Student';
+import Admin from './pages/Home/Admin_Panel/Manage_Admin/List_Admin';
+import Homework from './pages/Home/Admin_Panel/Manage_Homework/List_Homework';
+
+
 const ROLES = {
   'User': 2001,
-  'Editor': 1984,
-  'Admin': 5150
+  'Student': 2001,
+  'Admin': 5150,
+  'Teacher':5153,
+  'HomeWork':5178,
 }
 
 function App() {
@@ -33,8 +40,8 @@ function App() {
           <Route path="/" element={<Home />} />
         </Route>
 
-        <Route element={<RequireAuth allowedRoles={[ROLES.Editor]} />}>
-          <Route path="editor" element={<Editor />} />
+        <Route element={<RequireAuth allowedRoles={[ROLES.Student]} />}>
+          <Route path="student" element={<Student />} />
         </Route>
 
 
@@ -42,7 +49,11 @@ function App() {
           <Route path="admin" element={<Admin />} />
         </Route>
 
-        <Route element={<RequireAuth allowedRoles={[ROLES.Editor, ROLES.Admin]} />}>
+        <Route element={<RequireAuth allowedRoles={[ROLES.Homework]} />}>
+          <Route path="homework" element={<Student />} />
+        </Route>
+
+        <Route element={<RequireAuth allowedRoles={[ROLES.Teacher, ROLES.Admin]} />}>
           <Route path="lounge" element={<Lounge />} />
         </Route>
 
